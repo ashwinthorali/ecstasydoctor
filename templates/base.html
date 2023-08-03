@@ -1,0 +1,253 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <meta name="keywords" content="Straight Line Source">
+    <meta name="author" content="Indonez">
+    <meta name="theme-color" content="#FCB42D">
+    <!-- preload assets -->
+    <meta name="description" content="Straight Line Source can help you with fast and trusted funding options for your business with a 100% online process. Apply today!">
+    <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/rubik-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/rubik-v9-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/rubik-v9-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{% static 'css/style.css' %}" as="style">
+    <link rel="preload" href="{% static 'js/vendors/uikit.min.js' %}" as="script">
+    <link rel="preload" href="{% static 'js/utilities.min.js' %}" as="script">
+    <link rel="preload" href="{% static 'js/config-theme.js' %}" as="script">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- uikit -->
+    <script src="{% static 'js/vendors/uikit.min.js' %}"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <!-- touch icon -->
+    <link rel="apple-touch-icon-precomposed" href="{% static 'img/apple-touch-icon.png' %}">
+    {% block css %}
+    {% endblock css %}
+    <title>Straight Line Source</title>
+</head>
+
+<body>
+    <!-- page loader begin -->
+    <!--<div class="page-loader">-->
+    <!--    <div></div>-->
+    <!--    <div></div>-->
+    <!--    <div></div>-->
+    <!--</div>-->
+    <!-- page loader end -->
+    <!-- header begin -->
+    <header>
+        <div class="uk-section uk-padding-remove-vertical in-header-inverse ">
+            <nav class="uk-navbar-container uk-navbar-transparent" data-uk-sticky="show-on-up: true; top: 80; animation: uk-animation-fade">
+                <div class="uk-container" data-uk-navbar>
+                    <div class="uk-navbar-left uk-width-expand uk-flex uk-flex-between">
+                        <a class="uk-navbar-item uk-logo" href="{% url 'home:home' %}"  >
+                            <img src="{% static 'sls-logo.png' %}" alt="logo" class="logo-final">
+                        </a>
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="{% url 'home:home' %}">Home</a>
+                                
+                            </li>
+                            <li><a href="{% url 'home:mca' %}">Business Funding</a>
+                            </li>
+                            
+                            
+                            
+                            <li><a href="{% url 'home:industry' %}">Industries</a>
+                            </li>
+                            <li><a href="#">Resources<span data-uk-navbar-parent-icon></span></a>
+                                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="{% url 'home:blogs' %}">Blogs <i class="fas fa-square-arrow-up-right fa-sm"></i>
+                                                
+                                                </a></li>
+                                                <li><a href="{% url 'home:careers' %}">Careers</a></li>
+                                                <li><a href="{% url 'home:referral' %}">Referral</a></li>
+                                                <li><a href="{% url 'home:ccp' %}">Credit Card Processing</a>
+                                                </li>
+                                             
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a class="uk-disabled" href="#">44+ banks for business loan with 1 application.</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right uk-width-auto">
+                        <div class="uk-navbar-item uk-visible@m">
+                            <div class="in-optional-nav">
+                                <a href="{% url 'home:contact' %}" class="uk-button uk-button-text"><i class="fas fa-user-circle uk-margin-small-right"></i>Get In Touch</a>
+                                <a href="{% url 'home:apply' %}" class="uk-button uk-button-primary uk-button-small uk-border-pill ">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="uk-container">
+                <div class="uk-grid">
+                    <!-- <div class="uk-width-1-1">
+                        <div class="uk-card uk-card-secondary uk-card-small uk-card-body uk-border-rounded">
+                            <div class="uk-grid uk-text-small" data-uk-grid>
+                                <div class="uk-width-3-4@m uk-visible@m">
+                                    <p>
+                                        40+ banks for business loan with 1 application.
+
+                                        Zero impact on credit score.
+
+                                        Fully digital and convenient process.
+                                    </p>
+                                </div>
+                                <div class="uk-width-expand@m uk-text-center uk-text-right@m">
+                                    <a class="uk-margin-right" href="#"><i class="fas fa-comment-alt uk-margin-small-right"></i>Get Quote</a>
+                                    <a href="tel:5162081200"><i class="fas fa-phone-alt uk-margin-small-right uk-margin-small-left"></i>516-208-1200</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    {% block breadcrumb %}{% endblock breadcrumb %}
+                        
+                </div>
+            </div>
+        </div>  
+    </header>
+    <!-- header end -->
+    <main>
+    
+    {% block body %}
+        
+    {% endblock body %}
+        
+
+
+    <!-- section content end -->
+    </main>
+    <!-- footer begin -->
+    <footer>
+        <div class="uk-section uk-section-muted uk-padding-large uk-padding-remove-horizontal uk-margin-medium-top f16">
+            <div class="uk-container">
+                <div class="uk-grid-medium" data-uk-grid="">
+                    <div class="uk-width-expand@m">
+                        <div class="footer-logo">
+                            <img class="uk-display-block logo-final2" src="{% static 'sls-logo.png' %}" alt="footer-logo" >
+                        </div>
+                        <p class="uk-text-large uk-margin-small-top"> Lightning-fast funding process</p>
+                        <p class="uk-visible@m">
+                            <i class="fa fa-phone"> </i>
+                            <a href="tel:516-208-1200"> 516-208-1200</a>
+                            <br>
+
+                            <i class="fa fa-map-marker"> </i>
+                            215 RXR Plaza, Uniondale, NY 11553
+                        </p>
+                    </div>
+                    <div class="uk-width-3-5@m">
+                        <div class="uk-child-width-1-3@s uk-child-width-1-3@m" data-uk-grid="">
+                            <div>
+                                <h4><span>Quick Links</span></h4>
+                                <ul class="uk-list uk-link-text">
+                                    <li><a href="{% url 'home:apply' %}">Apply Online</a></li>
+                                    <li><a href="{% url 'home:contact' %}">Contact Us</a></li>
+                                    <li><a href="{% url 'home:careers' %}">Careers</a></li>
+                                    <li><a href="{% url 'home:industry' %}">Industries</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4><span>Resources</span></h4>
+                                <ul class="uk-list uk-link-text">
+                                    <li><a href="{% url 'home:ccp' %}">Credit Card Processing</a></li>
+                                    <li><a href="{% url 'home:mca' %}"> Business Funding</a></li>
+                                    <li><a href="{% url 'home:referral' %}"> Referrals</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4><span>Latest Blogs</span></h4>
+                                <ul class="uk-list uk-link-text">
+                                   {% for ie in blogs %}
+                                   <li><a href="{% url 'home:blogs_detail' ie.slug %}">{{ie.h1}}</a></li>
+                                   {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1 uk-margin-large-top in-offset-bottom-10">
+                        <h4><i class="fas fa-exclamation-triangle uk-text-danger uk-margin-small-right"></i>Don’t See Your Industry? – No Problem!</h4>
+                        <p class="uk-text-small">As long as you’ve been in business for 6 months and have at least $10,000 in revenue deposits in your business bank account each month, we can help you!</a></p>
+                        <hr>
+                        <div class="uk-grid uk-flex uk-flex-middle" data-uk-grid="">
+                            <div class="uk-width-1-2@m">
+                                <div class="uk-grid-small uk-flex uk-child-width-1-4@s uk-flex uk-child-width-5-5@m in-payment-method uk-text-center" data-uk-grid="">
+                                    <div>
+                                        <div class="">
+                                            <img src="{% static 'f1.png' %}" class="footer1" alt="wave-payment" >
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@m uk-flex uk-flex-right@m">
+                                <!-- social media begin -->
+                                <div class="uk-flex social-media-list">
+                                <div><a href="https://www.facebook.com/straightlinesource" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i> Facebook</a></div>
+                                <div><a href="https://twitter.com/StraightLineSrc" class="color-twitter text-decoration-none"><i class="fab fa-twitter"></i> Twitter</a></div>
+                                <div><a href="https://www.instagram.com/straightlinesource/" class="color-instagram text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a></div>
+                                <div><a href="https://www.linkedin.com/company/11544934" class="color-linkedin text-decoration-none"><i class="fab fa-linkedin"></i> linkedin</a></div>
+                                </div>
+                                <!-- social media end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="uk-section uk-section-secondary uk-padding-remove-vertical">
+            <div class="uk-container">
+                <div class="uk-grid">
+                    <div class="uk-width-2-4@m uk-visible@m">
+                        <ul class="uk-subnav uk-subnav-divider">
+                            <li><a href="{% url 'home:referral' %}">Referral</a></li>
+                            <li><a href="{% url 'home:term' %}">Terms & Conditions</a></li>
+                            <li><a href="{% url 'home:referral_td' %}">Referral Terms & Conditions</a></li>
+                            <li><a href="{% url 'home:privacy' %}">Privacy</a></li>
+                            <li><a href="{% url 'home:careers' %}">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-expand@m uk-text-right@m">
+                        <p class="copyright-text">© 2023 Staright Line Source | Site Developed by <a href="https://corunit.com/">Corunit Media Corp</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- to top begin -->
+    <a href="#" class="to-top uk-visible@m" data-uk-scroll>
+        Top<i class="fas fa-chevron-up" ></i>
+    </a>
+    <!-- to top end -->
+    <!-- javascript -->
+    <script src="{% static 'js/utilities.min.js' %}"></script>
+    <script src="{% static 'js/config-theme.js' %}"></script>
+    
+
+{% block js %}
+{% endblock js %}
+</body>
+
+</html>

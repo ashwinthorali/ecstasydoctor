@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block css %}
+    
+{% endblock css %}
+    
+
+
+{% block body %}
+    <!-- section content begin -->
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid">
+                
+                
+                <div class="uk-width-3-5@m">
+                    <h1 class="uk-margin-remove-bottom">Contact Us</h1>
+                    <p class="uk-text-lead uk-text-muted uk-margin-small-top">Do not hesitate to reach out. Just fill in the contact form here and we’ll be sure to reply as fast as possible.</p>
+                </div>
+                <div class="uk-section in-wave-2">
+                    <div class="uk-container">
+                       <a href="{% url 'home:apply' %}"> <img src="{% static 'c1.png' %}" class=""></a>
+                    </div>
+                </div>
+                <div class="uk-width-1-1@m ">
+                    <div class="uk-grid uk-grid-large" data-uk-grid>
+                        <div class="uk-width-1-3@m">
+                            <h4 class="uk-margin-remove-bottom">Office Address</h4>
+                            <p class="uk-margin-small-top">215 RXR Plaza, Uniondale, NY 11553</p>
+                            <h4 class="uk-margin-medium-top uk-margin-remove-bottom">Message us</h4>
+                            <p class="uk-margin-small-top">
+                                <a href="mailto:info@straightlinesource.com">info@straightlinesource.com</a>
+                                <br> <a href="tel:5162081200">516-208-1200</a> </p>
+                            <div class="uk-margin-medium-top in-wave-socials-contact">
+                                <a href="https://www.facebook.com/straightlinesource" class="fab fa-facebook-square fa-lg uk-text-decoration-none uk-margin-right"></a>
+                                <a href="https://twitter.com/StraightLineSrc" class="fab fa-twitter fa-lg uk-text-decoration-none uk-margin-right"></a>
+                                <a href="https://www.linkedin.com/company/11544934" class="fab fa-linkedin-in fa-lg uk-text-decoration-none uk-margin-right"></a>
+                                <a href="https://www.instagram.com/straightlinesource/" class="fab fa-instagram fa-lg uk-text-decoration-none uk-margin-right"></a>
+                                
+                            </div>
+                        </div>
+                        <div class="uk-width-2-3@m">
+                            <div class="uk-margin-medium-left in-margin-remove-left@s">
+                                <form id="contact-form" class="uk-form uk-grid-small" data-uk-grid>
+                                    <div class="uk-width-1-2@s uk-inline">
+                                        <span class="uk-form-icon fas fa-user fa-sm"></span>
+                                        <input class="uk-input uk-border-rounded" id="name" name="name" type="text" placeholder="Full name">
+                                    </div>
+                                    <div class="uk-width-1-2@s uk-inline">
+                                        <span class="uk-form-icon fas fa-envelope fa-sm"></span>
+                                        <input class="uk-input uk-border-rounded" id="email" name="email" type="email" placeholder="Email address">
+                                    </div>
+                                    <div class="uk-width-1-1 uk-inline">
+                                        <span class="uk-form-icon fas fa-pen fa-sm"></span>
+                                        <input class="uk-input uk-border-rounded" id="subject" name="subject" type="text" placeholder="Subject">
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <textarea class="uk-textarea uk-border-rounded" id="message" name="message" rows="6" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <button class="uk-button uk-button-primary uk-border-rounded uk-align-right" id="sendemail" type="submit" name="submit">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section content end -->
+    
+{% endblock body %}
+    
+
+
+{% block js %}
+    
+{% endblock js %}
+    

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block css %}
+    
+{% endblock css %}
+    
+
+{% block breadcrumb %}
+
+{% endblock breadcrumb %}
+    
+
+{% block body %}
+
+<!-- sectio content begin -->
+<div class="uk-section">
+    <div class="uk-container">
+        <div class="uk-grid">
+            <div class="uk-width-1-1 uk-flex uk-flex-center">
+                <div class="uk-width-3-4@m uk-margin-medium-bottom text-center">
+                    <p class="uk-text-lead">If you have any questions, feel free to call us at 
+                        <a href="tel:516-208-1200">516-208-1200 </a> <br> or email <a href="mailto:approvals@straightlinesource.com">approvals@straightlinesource.com</a></p>
+                    <div class="uk-section in-wave-2">
+                        <div class="uk-container">
+                           <a href="{% url 'home:apply' %}"> <img src="{% static 'c2.png' %}" class=""></a>
+                        </div>
+                    </div>
+                 <hr>   <p>We take data security seriously and all information provided is safe with us.
+                     If you want to know more about it, please visit 
+                    <a href="https://straightlinesource.com/privacy-policy/">
+                     <span class="uk-text-lowercase">Privacy & Policy.
+                    </span></a></p>
+                </div>
+            </div>
+            <div class="uk-width-1-1 in-timeline-1">
+                <script type="text/javascript" src="https://form.jotform.com/jsform/222684500629154"></script>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section content end -->
+{% endblock body %}
+    
+
+
+{% block js %}
+    
+{% endblock js %}
+    

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header %}
+
+{% endblock header %}
+
+{% block breadcrumb %}
+<!-- breadcrumb content begin -->
+<div class="uk-section uk-padding-remove-vertical in-wave-breadcrumb">
+<div class="uk-container">
+    <div class="uk-grid">
+        <div class="uk-width-1-1">
+            <ul class="uk-breadcrumb">
+                <li><a href="{% url 'home:mca' %}">Business Funding</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!-- breadcrumb content end -->
+{% endblock breadcrumb %}
+
+
+{% block css %}
+    
+{% endblock css %}
+    
+
+
+{% block body %}
+    <!-- section content begin -->
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid">
+                <div class="uk-width-1-1 in-content-10">
+                    <div class="uk-card uk-card-primary uk-card-body uk-border-rounded uk-background-bottom-left uk-background-contain" style="background-image: url(img/blockit/in-content-10-image.png);">                    
+                        <div class="uk-grid uk-flex uk-flex-center">
+                            <div class="uk-width-3-5@m uk-text-center">                            
+                                <h1 class="uk-margin-small-top">Merchant Referral Program
+                                </h1>
+                                <h3>
+                                    Straight Line Source + WeProcess
+                                </h3>
+                                <p>
+                                    Credit Card Processing
+                                </p>
+                                <img src="{% static 'ref.png' %}" alt="Merchant Referral Program">
+
+                             </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <p><small><i>*The promotion is valid for Credit Card Processing Programs only, from 6/01/2023 to 10/01/2023. In order to qualify, the merchant being referred needs to be a new client (existing clients by the time of the referral won’t count), process over $10,000/month, and be actively processing for 30 days. The referee will receive the gift card once those two requirements are completed. Only the person making the referral can qualify for the gift card (no friends, family, or any other person can claim the gift card). If the same person is referred twice, only the first person who referred the merchant will be eligible to receive the gift card. Only one gift card is given per qualified referred business. Referees can refer to as many merchants as they like. The referee can be someone other than a current Straight Line Source and its affiliates’ client to qualify. The referee’s name will be mentioned to the referred person when contacted. Promotion is a partnership between Straight Line Source and WeProcess.</i></small></p>
+                      
+                    </div>
+
+                    <div>
+                        <script type="text/javascript" src="https://form.jotform.com/jsform/223055057564152"></script>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section content end -->
+{% endblock body %}
+    
+
+
+{% block js %}
+    
+{% endblock js %}
+    
